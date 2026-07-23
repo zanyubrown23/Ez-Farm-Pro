@@ -1111,9 +1111,11 @@ export default function EzFarmingPro(){
 }
 
 // Inject keyframes
-const st=document.createElement("style");
-st.textContent=`@keyframes spin{to{transform:rotate(360deg)}}`;
-document.head.appendChild(st);  dollar:   <><circle cx="12" cy="12" r="10"/><path d="M12 6v12M9 9h4.5a2.5 2.5 0 0 1 0 5H9a2.5 2.5 0 0 1 0-5h6"/></>,
+const st = document.createElement("style");
+st.textContent = `@keyframes spin{to{transform:rotate(360deg)}}`;
+document.head.appendChild(st);
+const ICONS = {
+  dollar:   <><circle cx="12" cy="12" r="10"/><path d="M12 6v12M9 9h4.5a2.5 2.5 0 0 1 0 5H9a2.5 2.5 0 0 1 0-5h6"/></>,
   home:     <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></>,
   chart:    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>,
   plus:     <><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></>,
@@ -1144,7 +1146,8 @@ document.head.appendChild(st);  dollar:   <><circle cx="12" cy="12" r="10"/><pat
   dna:      <><path d="M2 15c6.667-6 13.333 0 20-6"/><path d="M9 22c1.798-1.998 2.518-3.995 2.854-5.993"/><path d="M15 2c-1.798 1.998-2.518 3.995-2.854 5.993"/><path d="m2 9 20 6"/><path d="m2 21 20-6"/></>,
   clipboard:<><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></>,
 };
-const Ic = ({n,s=18,c}) => <SVG d={ICONS[n]} s={s} c={c} />;
+
+const Ic = ({n, s = 18, c}) => <SVG d={ICONS[n]} s={s} c={c} />;
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 const S = {
