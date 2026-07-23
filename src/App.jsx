@@ -1,9 +1,0 @@
-src/main.jsx
-src/index.css
-src/components/EzFarmingPro.jsx
-public/favicon.ico
-package.json
-vite.config.js
-.gitignore
-README.md
-index.html
