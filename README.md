@@ -1,25 +1,25 @@
-# EzFarmingPro
+# Ez Farm Pro
 
-EzFarmingPro is a React application designed to help farmers manage their farming activities more efficiently.
+A modern React application for managing farming activities.
 
 ## Features
+
 - Farm management
-- Simple and responsive UI
-- Built with React
+- Crop records
+- Livestock tracking
+- Responsive design
+
+## Tech Stack
+
+- React
+- Vite
 
 ## Getting Started
 
-```bash
 npm install
+
 npm run dev
-```
 
-or
+## Build
 
-```bash
-npm start
-```
-
-## Author
-
-Created by Zanyu Brown
+npm run build
